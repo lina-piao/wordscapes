@@ -42,3 +42,8 @@ def generate_words(letters: str, min_len: int = 3, max_len: int | None = None) -
 
 if __name__ == '__main__':
     print(generate_words('stare'))
+
+
+### Okay, so this code is working but it gives answers that might also be wrong or acronyms for things that are not necessarily considered words
+# I think the best way to do this would be to use a dictionary of words and then check each word against that dictionary
+# This would be much more accurate and would also allow for acronyms (e.g., STARE)
